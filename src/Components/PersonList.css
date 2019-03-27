@@ -1,0 +1,7 @@
+#cardcontainer {
+    display: flex;
+    justify-content:center;
+}
+#mtgcards li{    
+    list-style-type:none;
+}

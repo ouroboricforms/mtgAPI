@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import './PersonList.css';
 
 export default class PersonList extends React.Component {
     state = {
@@ -16,11 +17,13 @@ export default class PersonList extends React.Component {
 
     render(){
         return(
-            <ul>
-                {this.state.cards.map(cards => (
-                     <li key={cards.id}>{cards.name}</li>
-                ))}
-            </ul>
+            <div id="cardcontainer">
+                <ul id="mtgcards">
+                    {this.state.cards.map(cards => (
+                        <li key={cards.id}>{cards.name}<br></br> <img src={cards.imageUrl}/> </li>
+                    ))}
+                </ul>
+            </div>
         );
     }
 
