@@ -18,11 +18,11 @@ export default class PersonList extends React.Component {
     render(){
         return(
             <div id="cardcontainer">
-                <ul id="mtgcards">
+                
                     {this.state.cards.map(cards => (
                         <li key={cards.id}>{cards.name}<br></br> <img src={cards.imageUrl}/> </li>
                     ))}
-                </ul>
+                
             </div>
         );
     }
