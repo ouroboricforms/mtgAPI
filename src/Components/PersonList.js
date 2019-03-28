@@ -20,7 +20,7 @@ export default class PersonList extends React.Component {
             <div id="cardcontainer">
                 
                     {this.state.cards.map(cards => (
-                        <li key={cards.id}>{cards.name}<br></br> <img src={cards.imageUrl}/> </li>
+                        <li key={cards.id}>{cards.name}<img src={cards.imageUrl}/> </li>
                     ))}
                 
             </div>
